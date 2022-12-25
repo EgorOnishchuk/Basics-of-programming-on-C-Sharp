@@ -2,8 +2,11 @@
 int a = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите второе число.");
 int b = int.Parse(Console.ReadLine()!);
-if (a > b){
+if (a > b)
+{
     Console.WriteLine($"Число {a} - большее, число {b} - меньшее.");
-} else{
+} 
+else
+{
     Console.WriteLine($"Число {b} - большее, число {a} - меньшее.");
 }

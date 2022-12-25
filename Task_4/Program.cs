@@ -5,10 +5,12 @@ int b = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите третье число.");
 int c = int.Parse(Console.ReadLine()!);
 int maximum = a;
-if (b > maximum){
+if (b > maximum)
+{
     maximum = b;
 }
-if (c > maximum){
+if (c > maximum)
+{
     maximum = c;
 }
 Console.WriteLine($"Максимальное число - {maximum}.");

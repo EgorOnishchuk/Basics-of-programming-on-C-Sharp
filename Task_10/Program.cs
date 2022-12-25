@@ -1,4 +1,5 @@
-﻿int GetNumberSecondDigit (int number){
+﻿int GetNumberSecondDigit (int number)
+{
     return number % 100 / 10;
 }
 
