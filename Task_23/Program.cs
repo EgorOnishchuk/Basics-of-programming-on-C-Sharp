@@ -1,21 +1,22 @@
-﻿int GetNumberCube (int number)
+﻿void PrintNumbersCubesFrom1ToN (int number)
 {   
-    return number * number * number;
+    int numberCube;
+    int i = 1;
+    while (i <= number)
+    {   
+        numberCube = i * i * i;
+        if (i == number)
+        {   
+            Console.WriteLine ($"{numberCube}.");
+        }
+        else 
+        {   
+            Console.Write ($"{numberCube}, ");
+        }
+        i++;
+    }
 }
 
-int i = 1;
 Console.WriteLine("Введите число.");
 int N = int.Parse(Console.ReadLine()!);
-while (i <= N)
-{   
-    int numberCube = GetNumberCube (i);
-    if (i == N)
-    {   
-        Console.WriteLine ($"{numberCube}.");
-    }
-    else 
-    {   
-        Console.Write ($"{numberCube}, ");
-    }
-    i++;
-}
+PrintNumbersCubesFrom1ToN (N);
