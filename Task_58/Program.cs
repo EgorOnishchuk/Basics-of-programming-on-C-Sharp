@@ -77,6 +77,7 @@ bool Get2MatricesProduct(double[,] firstMatrix, double[,] secondMatrix, double[,
     return true;
 }
 
+
 int rows = GetMatrixComponent("количество строк первой матрицы");
 int columns = GetMatrixComponent("количество столбцов первой матрицы");
 int rangeMinNum = GetMatrixComponent("минимальное число диапазона, в пределах которого будут создаваться псевдослучайные числа для первой матрицы");

@@ -75,6 +75,7 @@ int FindArrayElementsMinSumRow(double[,] array)
     return row;
 }
 
+
 int rows = GetArrayComponent("количество строк массива");
 int columns = GetArrayComponent("количество столбцов массива");
 int rangeMinNum = GetArrayComponent("минимальное число диапазона, в пределах которого будут создаваться псевдослучайные числа для массива");

@@ -97,6 +97,7 @@ void PrintArrayElements(int[,,] array)
     }
 }
 
+
 int length = GetArrayComponent("длину массива");
 int width = GetArrayComponent("ширину массива");
 int height = GetArrayComponent("высоту массива");
