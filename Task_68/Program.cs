@@ -6,19 +6,19 @@ int GetFunctionArgument(string argumentNumber)
     return int.Parse(Console.ReadLine()!);
 }
 
-int CalculateAckermannFunction(int firstNumber, int secondNumber)
+int CalculateAckermannFunction(int m, int n)
 {
-    if (firstNumber == 0)
+    if (m == 0)
     {
-        return secondNumber + 1;
-    }
-     
-    if (firstNumber > 0 && secondNumber == 0)
-    {
-        return CalculateAckermannFunction(firstNumber - 1, 1);
+        return n + 1;
     }
 
-    return CalculateAckermannFunction(firstNumber - 1, CalculateAckermannFunction(firstNumber, secondNumber - 1));
+    if (m > 0 && n == 0)
+    {
+        return CalculateAckermannFunction(m - 1, 1);
+    }
+
+    return CalculateAckermannFunction(m - 1, CalculateAckermannFunction(m, n - 1));
 }
 
 

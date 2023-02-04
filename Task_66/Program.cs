@@ -1,19 +1,17 @@
 ﻿// Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 
 int GetValues(string valueNumber)
-{
+{   
     Console.WriteLine($"Введите {valueNumber} число.");
-    return int.Parse(Console.ReadLine()!);
-}
-
-bool IsNumNatural(double number)
-{
-    if (number <= 0)
-    {
-        return false;
-    }
+    int number = int.Parse(Console.ReadLine()!);
     
-    return true;
+    while(number <= 0)
+    {
+        Console.WriteLine($"Введите {valueNumber} число.");
+        number = int.Parse(Console.ReadLine()!);
+    }
+
+    return number;
 }
 
 int GetNaturalNumbersSum(int rangeFirstNum, int rangeLastNum)
@@ -28,15 +26,7 @@ int GetNaturalNumbersSum(int rangeFirstNum, int rangeLastNum)
 
 
 int M = GetValues("первое");
-while(!IsNumNatural(M))
-{
-    M = GetValues("первое");
-}
 
 int N = GetValues("второе");
-while(!IsNumNatural(N))
-{
-    N = GetValues("второе");
-}
 
 Console.WriteLine($"Сумма натуральных чисел от {M} до {N} - {GetNaturalNumbersSum(M, N)}.");
